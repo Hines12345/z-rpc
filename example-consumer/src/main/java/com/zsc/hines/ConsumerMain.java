@@ -12,7 +12,6 @@ public class ConsumerMain
 {
     public static void main( String[] args )
     {
-        //todo 通过rpc远程调用实例对象
         //使用动态代理获取对象
         UserService userService = ServiceProxyFactory.getProxy(UserService.class);
         User user = new User();
